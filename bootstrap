@@ -26,7 +26,7 @@ fi
 cd "$HOME/penboot" || exit 1
 
 # Make scripts executable
-chmod +x symlink.sh packages.sh
+chmod +x ./scripts/symlink.sh ./scripts/packages.sh
 
 # Run scripts
 ./scripts/symlink.sh
