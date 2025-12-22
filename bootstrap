@@ -32,4 +32,4 @@ chmod +x symlink.sh packages.sh
 ./scripts/symlink.sh
 ./scripts/packages.sh "$NOCONFIRM_FLAG"
 
-cp .dotfiles/firefox/policies.json /usr/lib/firefox/distribution
+cp dotfiles/firefox/policies.json /usr/lib/firefox/distribution
