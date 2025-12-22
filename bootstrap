@@ -1,0 +1,35 @@
+#!/bin/bash
+set -e
+
+# Detect --noconfirm flag
+NOCONFIRM_FLAG=""
+if [[ "$1" == "--noconfirm" || "$1" == "-y" ]]; then
+    NOCONFIRM_FLAG="--noconfirm"
+fi
+
+# Ensure git is available
+if ! command -v git &>/dev/null; then
+    echo "Error: git is not installed."
+    exit 1
+fi
+
+# Clone or update repo
+if [ ! -d "$HOME/penboot" ]; then
+    echo "Cloning Himarchy..."
+    git clone "https://github.com/himadrichakra12/penboot.git" "$HOME/penboot"
+else
+    echo "Updating Himarchy..."
+    cd "$HOME/penboot" || exit 1
+    git pull --rebase --autostash
+fi
+
+cd "$HOME/penboot" || exit 1
+
+# Make scripts executable
+chmod +x symlink.sh packages.sh
+
+# Run scripts
+./scripts/symlink.sh
+./scripts/packages.sh "$NOCONFIRM_FLAG"
+
+cp .dotfiles/firefox/policies.json /usr/lib/firefox/distribution
