@@ -1,0 +1,34 @@
+{
+  "policies": {
+    "ExtensionSettings": {
+      "*": {
+        "blocked_install_message": "Extension installation is managed by your administrator."
+      },
+
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      },
+
+      "stylus@add0n.com": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi"
+      },
+
+      "raindropio@raindrop.io": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/raindropio/latest.xpi"
+      },
+
+      "vimium@vimium.github.io": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi"
+      },
+
+      "violentmonkey@violentmonkey.github.io": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/violentmonkey/latest.xpi"
+      }
+    }
+  }
+}
