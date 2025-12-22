@@ -23,7 +23,7 @@ else
     git pull --rebase --autostash
 fi
 
-cd "$HOME/penboot"
+cd "~/penboot"
 
 # Make scripts executable
 chmod +x ./scripts/symlink.sh ./scripts/packages.sh
@@ -32,4 +32,4 @@ chmod +x ./scripts/symlink.sh ./scripts/packages.sh
 ./scripts/symlink.sh
 ./scripts/packages.sh "$NOCONFIRM_FLAG"
 
-cp dotfiles/firefox/policies.json /usr/lib/firefox/distribution
+sudo cp dotfiles/firefox/policies.json /usr/lib/firefox/distribution
