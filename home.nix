@@ -20,7 +20,7 @@
     pkgs.i3
     pkgs.dunst
     pkgs.rofi
-    pkgs.alacritty
+    pkgs.wezterm
   ];
 
   # Enable programs
