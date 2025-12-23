@@ -11,6 +11,7 @@ shell=(
     "vim"
     "fzf"
     "kde-cli-tools"
+    "mpv"
 )
 
 # Capture --noconfirm flag from argument
