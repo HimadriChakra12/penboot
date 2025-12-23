@@ -23,7 +23,7 @@ else
     git pull --rebase --autostash
 fi
 
-cd "~/penboot"
+cd "$HOME/penboot"
 
 # Make scripts executable
 chmod +x ./scripts/symlink.sh ./scripts/packages.sh
