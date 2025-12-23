@@ -11,6 +11,7 @@ shell=(
     "tmux"
     "cat"
     "7zip"
+    "vim"
 )
 
 # Capture --noconfirm flag from argument
@@ -28,9 +29,10 @@ install_category() {
         return
     fi
 
-    yay -S ${NOCONFIRM_FLAG} "${packages_list[@]}"
+    sudo pacman -S ${NOCONFIRM_FLAG} "${packages_list[@]}"
 }
 
+sudo pacman -Sy
 # Install categories
 install_category "Shell tools" "${shell[@]}"
 install_category "Other Packages" "${packages[@]}"
