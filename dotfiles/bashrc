@@ -19,6 +19,8 @@ alias ep="nvim ~/.bashrc"
 alias sour="source ~/.bashrc"
 alias l="ls"
 
+alias i="sudo pacman -S"
+
 alias v="vim"
 alias nvim="vim"
 alias q="exit"
