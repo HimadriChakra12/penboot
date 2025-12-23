@@ -4,7 +4,6 @@ packages=(
     "wezterm"
 )
 shell=(
-    "curl"
     "github-cli"
     "lazygit"
     "neovim"
