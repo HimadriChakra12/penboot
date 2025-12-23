@@ -1,6 +1,5 @@
 #
 # ~/.bashrc
-#
 export FZF_COMPLETION_TRIGGER='..'
 
 # If not running interactively, don't do anything
@@ -246,4 +245,11 @@ mkcd(){
   mkdir $location && cd $location
   # Output anchored regex
   pwd
+}
+
+gc() {
+  name="$1"
+  email="$2"
+  git config --global user.name "$1"
+  git config --global user.email "$2"
 }
