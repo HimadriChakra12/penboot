@@ -29,17 +29,25 @@ if [ "$(pwd)" == "$HOME/penboot" ]; then
 	# Run scripts
 	echo "Configuring symlinks"
 	bash ./scripts/symlink.sh
-	echo "Installing packages"
-	bash ./scripts/packages.sh "$NOCONFIRM_FLAG"
 	echo "Disabling KDE Animations"
 	bash ./scripts/kdeanim.sh 
+	echo "KDE debloat"
+	bash ./scripts/kdebloat.sh 
+	echo "KDE tiling"
+	bash ./scripts/kdetile.sh 
+	echo "Installing packages"
+	bash ./scripts/packages.sh "$NOCONFIRM_FLAG"
 else
 	echo "Configuring symlinks"
 	bash $HOME/penpot/scripts/symlink.sh
-	echo "Installing packages"
-	bash $HOME/penpot/scripts/packages.sh "$NOCONFIRM_FLAG"
 	echo "Disabling KDE Animations"
 	bash $HOME/penpot/scripts/kdeanim.sh 
+	echo "KDE debloat"
+	bash $HOME/penpot/scripts/kdebloat.sh 
+	echo "KDE tiling"
+	bash $HOME/penpot/scripts/kdetile.sh 
+	echo "Installing packages"
+	bash $HOME/penpot/scripts/packages.sh "$NOCONFIRM_FLAG"
 fi
 
 sudo cp dotfiles/firefox/policies.json /usr/lib/firefox/distribution
