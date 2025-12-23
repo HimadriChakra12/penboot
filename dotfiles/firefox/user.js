@@ -201,4 +201,5 @@ user_pref("findbar.highlightAll", true);
 user_pref("layout.word_select.eat_space_to_next_word", false);
 
 /** Minimal Browser Density(Compact) **/
+user_pref("browser.ctrlTab.sortByRecentlyUsed", true);
 user_pref("browser.uidensity", 1);
