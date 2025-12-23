@@ -45,11 +45,6 @@ set history=1000        " Remember the last 1000 search queries
 " Show line and column numbers on the status line
 set statusline=%l/%L\ %c " Show current line/column in statusline
 
-" Enable auto-save and backup files
-set backup              " Enable backup files
-set backupdir=~/.vim/backup " Set the backup directory
-set writebackup         " Enable write backup
-
 " Enable incremental search highlighting
 set incsearch           " Search while typing
 
