@@ -13,6 +13,7 @@ link() {
 
 link "$DOTDIR/bashrc" "$HOME/.bashrc"
 link "$DOTDIR/wezterm" "$HOME/.config/wezterm"
+link "$DOTDIR/mpv" "$HOME/.config/mpv"
 link "$DOTDIR/tmux.conf" "$HOME/.tmux.conf"
 link "$DOTDIR/vimrc" "$HOME/.vimrc"
 
