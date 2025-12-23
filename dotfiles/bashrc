@@ -5,6 +5,10 @@ export FZF_COMPLETION_TRIGGER='..'
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+pb(){
+    cd "$HOME/penboot"
+    vim $(fzf)
+}
 alias grep='grep --color=auto'
 alias paci="sudo pacman -S"
 alias pacs="sudo pacman -q"
@@ -15,8 +19,8 @@ alias pks="pikaur -q"
 alias update="yay"
 
 alias ep="nvim ~/.bashrc"
-alias sour="source ~/.bashrc"
-alias l="ls"
+alias sour="source $HOME/.bashrc"
+alias ls="ls -lah"
 
 alias i="sudo pacman -S"
 
@@ -224,16 +228,6 @@ ez() {
 
     # Extract using 7z
     7z x "$archive" -o"$dir"
-}
-dot(){
-    cp ~/.local/share/omarchy/bin ~/himarchy/omarchy -r
-    cp ~/.local/share/omarchy/config ~/himarchy/omarchy -r
-    cp ~/.local/share/omarchy/default ~/himarchy/omarchy -r
-    cp ~/.local/share/omarchy/install ~/himarchy/omarchy -r
-    cp ~/.local/share/omarchy/themes ~/himarchy/omarchy -r
-    cp ~/.local/share/nemo/scripts ~/himarchy/nemo -r
-    cp ~/.local/share/applications/custom ~/himarchy -r
-    cp ~/bin ~/himarchy -r
 }
 
 mkcd(){
