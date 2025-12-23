@@ -6,11 +6,11 @@ packages=(
 shell=(
     "github-cli"
     "lazygit"
-    "neovim"
     "tmux"
-    "cat"
     "7zip"
     "vim"
+    "fzf"
+    "kde-cli-tools"
 )
 
 # Capture --noconfirm flag from argument

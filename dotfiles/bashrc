@@ -7,19 +7,6 @@ export FZF_COMPLETION_TRIGGER='..'
 [[ $- != *i* ]] && return
 
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
-SESSION_NAME="cmus"
-if ! tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
-    tmux new-session -d -s "$SESSION_NAME" "cmus"
-fi
-alias cm="tmux attach -t cmus"
-
-alias t="tmux"
-alias ta="tmux attach"
-alias tls="tmux list-sessions"
-alias tlw="tmux list-windows"
-alias tlp="tmux list-panes"
-
 alias paci="sudo pacman -S"
 alias pacs="sudo pacman -q"
 alias yi="yay -S"
@@ -32,7 +19,8 @@ alias ep="nvim ~/.bashrc"
 alias sour="source ~/.bashrc"
 alias l="ls"
 
-alias v="nvim"
+alias v="vim"
+alias nvim="vim"
 alias q="exit"
 alias c="clear"
 alias gg="lazygit"

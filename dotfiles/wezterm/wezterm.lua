@@ -22,7 +22,7 @@ return {
   },
 	-- font
 	font = wezterm.font("JetBrains Mono", { weight = "Medium" }),
-	font_size = 8,
+	font_size = 10,
 	line_height = 1,
 --	window_background_opacity = 0.98,
 	-- tab bar
