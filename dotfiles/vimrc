@@ -75,7 +75,8 @@ Plug 'junegunn/fzf.vim' " Fuzzy file search
 call plug#end()
 
 " Use <leader>e to open Oil file explorer
-nnoremap <leader>e :Oil<CR>
+nnoremap <leader>e :Explore<CR>
 
 " Map leader key for some useful commands
 nnoremap <leader>o :Files<CR>
+nnoremap <leader><leader> :Buffers<CR>
