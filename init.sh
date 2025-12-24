@@ -16,7 +16,8 @@ echo "
 2. Run the kdeconfig
 3. Run the Firefox Config
 4. Install Packages
-5. Vim-plug
+5. Spotx-bash
+6. Vim-plug
 "
 
 read -p "Choose the Option: " opt
@@ -41,6 +42,10 @@ if [ "$(pwd)" == "$HOME/penboot" ]; then
         echo "Installing packages"
         bash ./scripts/packages.sh "$NOCONFIRM_FLAG"
     elif [[ "$opt" == "5" ]]; then
+        echo "Providing Spot-x bash"
+        bash <(curl -sSL https://spotx-official.github.io/run.sh)
+    elif [[ "$opt" == "6" ]]; then
+        echo "Vim-plugging..."
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
             https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         vim +":PlugInstall"
@@ -64,6 +69,10 @@ else
         echo "Installing packages"
         bash $HOME/penboot/scripts/packages.sh "$NOCONFIRM_FLAG"
     elif [[ "$opt" == "5" ]]; then
+        echo "Providing Spot-x bash"
+        bash <(curl -sSL https://spotx-official.github.io/run.sh)
+    elif [[ "$opt" == "6" ]]; then
+        echo "Vim-plugging..."
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
             https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         vim +":PlugInstall"

@@ -2,6 +2,7 @@
 # Packages
 packages=(
     "wezterm"
+    "spotify"
 )
 shell=(
     "github-cli"
@@ -12,6 +13,7 @@ shell=(
     "fzf"
     "kde-cli-tools"
     "mpv"
+    "zip"
 )
 
 # Capture --noconfirm flag from argument
@@ -29,7 +31,7 @@ install_category() {
         return
     fi
 
-    sudo pacman -S ${NOCONFIRM_FLAG} "${packages_list[@]}"
+    yay -S ${NOCONFIRM_FLAG} "${packages_list[@]}"
 }
 
 sudo pacman -Sy
