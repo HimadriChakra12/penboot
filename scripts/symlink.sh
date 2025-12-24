@@ -16,4 +16,5 @@ link "$DOTDIR/wezterm" "$HOME/.config/wezterm"
 link "$DOTDIR/mpv" "$HOME/.config/mpv"
 link "$DOTDIR/tmux.conf" "$HOME/.tmux.conf"
 link "$DOTDIR/vimrc" "$HOME/.vimrc"
-
+link "$DOTDIR/okular/okularrc" "$HOME/.config/okularrc"
+link "$DOTDIR/okular/okularpartrc" "$HOME/.config/okularpartrc"
