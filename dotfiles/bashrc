@@ -20,7 +20,7 @@ alias update="yay"
 
 alias ep="nvim ~/.bashrc"
 alias sour="source $HOME/.bashrc"
-alias ls="ls -lah"
+alias l="ls -lah"
 
 alias i="sudo pacman -S"
 
