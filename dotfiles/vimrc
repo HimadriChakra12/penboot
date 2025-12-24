@@ -66,9 +66,6 @@ autocmd FileType markdown,text setlocal spell " Enable spellchecking in markdown
 " Plugins configuration (using vim-plug)
 call plug#begin('~/.vim/plugged')
 
-" Install Oil plugin for file browsing
-Plug 'stevearc/oil.nvim'
-
 " Example plugin setup (using vim-plug)
 Plug 'junegunn/fzf.vim' " Fuzzy file search
 
