@@ -60,7 +60,9 @@
 			"PreventInstalls": false,
 			"Remove": [
 				"Amazon.com",
-				"eBay"
+				"eBay",
+                "Bing",
+                "DuckDuckGo"
 			],
 			"Default": "Brave",
 			"Add": [
@@ -100,6 +102,13 @@
 					"Alias": "bbg",
 					"Method": "GET",
 					"URLTemplate": "https://search.brave.com/search?q={searchTerms}"
+				},
+				{
+					"Name": "YouTube",
+					"Description": "Search On Youtube",
+					"Alias": "yt",
+					"Method": "GET",
+					"URLTemplate": "https://www.youtube.com/results?search_query={searchTerms}"
 				}
 			]
 		}
