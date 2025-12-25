@@ -35,6 +35,8 @@ if [ "$(pwd)" == "$HOME/penboot" ]; then
         bash ./scripts/kdeanim.sh 
         echo "KDE debloat"
         bash ./scripts/kdebloat.sh 
+        echo "KDE NBG Services"
+        bash ./scripts/unrun.sh 
     elif [[ "$opt" == "3" ]]; then
         echo "Firefox fixup"
         bash ./scripts/firefox.sh 
@@ -62,6 +64,8 @@ else
         bash $HOME/penboot/scripts/kdeanim.sh 
         echo "KDE debloat"
         bash $HOME/penboot/scripts/kdebloat.sh 
+        echo "KDE NBG Services"
+        bash $HOME/penboot/scripts/unrun.sh 
     elif [[ "$opt" == "3" ]]; then
         echo "Firefox fixup"
         bash $HOME/penboot/scripts/firefox.sh 
