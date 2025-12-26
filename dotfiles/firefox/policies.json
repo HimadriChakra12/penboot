@@ -109,6 +109,34 @@
 					"Alias": "yt",
 					"Method": "GET",
 					"URLTemplate": "https://www.youtube.com/results?search_query={searchTerms}"
+				},
+				{
+					"Name": "GetIntoPC",
+					"Description": "Getintopc Search",
+					"Alias": "gt",
+					"Method": "GET",
+					"URLTemplate": "https://getintopc.com/?s={searchTerms}"
+				},
+				{
+					"Name": "Reddit",
+					"Description": "Reddit Search",
+					"Alias": "rs",
+					"Method": "GET",
+					"URLTemplate": "https://www.reddit.com/search/?q={searchTerms}"
+				},
+				{
+					"Name": "SubReddit",
+					"Description": "Subreddit Search",
+					"Alias": "rr",
+					"Method": "GET",
+					"URLTemplate": "https://www.reddit.com/r/{searchTerms}"
+				},
+				{
+					"Name": "HimadriChakra12",
+					"Description": "Github Repo Search for me",
+					"Alias": "gg",
+					"Method": "GET",
+					"URLTemplate": "https://github.com/HimadriChakra12/{searchTerms}"
 				}
 			]
 		}
